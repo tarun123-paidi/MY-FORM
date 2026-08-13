@@ -22,7 +22,7 @@ function readDB() {
         return JSON.parse(raw);
     } catch (err) {
         console.error('Error reading db.json:', err);
-        return { config: { adminPin: "1234" }, eggs: [], chicks: [], orders: [] };
+        return { config: { adminPin: "Pavan@9991" }, eggs: [], chicks: [], orders: [] };
     }
 }
 
@@ -63,7 +63,7 @@ app.get('/api/config', (req, res) => {
 app.post('/api/admin/login', (req, res) => {
     const { pin } = req.body;
     const db = readDB();
-    const currentPin = db.config.adminPin || "1234";
+    const currentPin = db.config.adminPin || "Pavan@9991";
 
     if (pin && String(pin).trim() === String(currentPin).trim()) {
         res.json({
@@ -84,7 +84,7 @@ app.post('/api/config', (req, res) => {
     const db = readDB();
     const { adminPin, ...newConfig } = req.body;
     const requestPin = adminPin || req.headers['x-admin-pin'];
-    const currentPin = db.config.adminPin || "1234";
+    const currentPin = db.config.adminPin || "Pavan@9991";
 
     // Verify Admin Authorization PIN
     if (!requestPin || String(requestPin).trim() !== String(currentPin).trim()) {
@@ -194,7 +194,7 @@ app.post('/api/orders', (req, res) => {
 app.get('/api/orders', (req, res) => {
     const requestPin = req.headers['x-admin-pin'] || req.query.pin;
     const db = readDB();
-    const currentPin = db.config.adminPin || "1234";
+    const currentPin = db.config.adminPin || "Pavan@9991";
 
     if (!requestPin || String(requestPin).trim() !== String(currentPin).trim()) {
         return res.status(401).json({ success: false, error: 'Unauthorized: Admin PIN required to view orders' });

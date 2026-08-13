@@ -187,7 +187,7 @@ function setupAdminAuth() {
                 }
             } catch (err) {
                 console.error("Backend auth check error, testing fallback PIN", err);
-                if (pin === "1234") {
+                if (pin === "Pavan@9991") {
                     currentAdminPin = pin;
                     loginModal.classList.remove("open");
                     openCustomizerModal();
