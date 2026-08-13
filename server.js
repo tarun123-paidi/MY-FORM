@@ -212,6 +212,6 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
     console.log(`====================================================`);
     console.log(`🚀 my farms.vzx Backend API Server running on port ${PORT}`);
-    console.log(`🔑 Admin Protection Enabled (Default PIN: 1234)`);
+    console.log(`🔑 Admin Protection Enabled`);
     console.log(`====================================================`);
 });
