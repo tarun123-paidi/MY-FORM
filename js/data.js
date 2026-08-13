@@ -6,7 +6,7 @@ const defaultFarmConfig = {
     phone2: "+91 85008 03000 (Pavan)",
     whatsapp: "918500803000",
     address: "Plot No 85/B, KVR Sakthidhar, Near Chelluru Highway, Vizianagaram 535005",
-    hours: "8:00 AM - 5:00 PM (All 7 Days)",
+    hours: "8:00 AM - 6:00 PM (All 7 Days)",
     instagramUrl: "https://www.instagram.com/my_farms_vizianagaram?igsi=MXJid3FmcmllNng3NQ%3D%3D&utm_source=qr",
     mapEmbedUrl: "https://www.google.com/maps?q=18.056419372558594,83.3743667602539&z=17&hl=en"
 };
