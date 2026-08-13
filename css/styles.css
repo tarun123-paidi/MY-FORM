@@ -1392,22 +1392,22 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
     flex-wrap: wrap;
-    max-width: 920px;
+    max-width: 680px;
     margin: 0 auto;
 }
 
 .hero-actions .btn {
-    font-size: 1.025rem;
-    padding: 14px 28px;
-    flex: 1 1 210px;
-    min-width: 210px;
+    font-size: 1.05rem;
+    padding: 16px 32px;
+    flex: 1 1 240px;
+    min-width: 240px;
     text-align: center;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
     border-radius: var(--radius-full);
 }
 
