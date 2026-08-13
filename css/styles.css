@@ -1394,11 +1394,21 @@ html, body {
     align-items: center;
     gap: 14px;
     flex-wrap: wrap;
+    max-width: 920px;
+    margin: 0 auto;
 }
 
 .hero-actions .btn {
     font-size: 1.025rem;
-    padding: 14px 26px;
+    padding: 14px 28px;
+    flex: 1 1 210px;
+    min-width: 210px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: var(--radius-full);
 }
 
 .hero-btn-maps {
