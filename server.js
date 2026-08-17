@@ -48,6 +48,12 @@ function getPublicConfig(config) {
 // REST API ENDPOINTS
 // ==========================================
 
+// Google Search Console Site Verification Route
+app.get('/google1df1443a4077599a.html', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.send('google-site-verification: google1df1443a4077599a.html');
+});
+
 // GET /api/health
 app.get('/api/health', (req, res) => {
     res.json({ status: 'ok', message: 'my farms vizinagaram REST API is running successfully' });
