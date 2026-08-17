@@ -50,8 +50,7 @@ function getPublicConfig(config) {
 
 // Google Search Console Site Verification Route
 app.get('/google1df1443a4077599a.html', (req, res) => {
-    res.setHeader('Content-Type', 'text/html');
-    res.send('google-site-verification: google1df1443a4077599a.html');
+    res.sendFile(path.join(__dirname, 'google1df1443a4077599a.html'));
 });
 
 // GET /api/health
