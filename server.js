@@ -12,6 +12,16 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Google Search Console Site Verification Routes (MUST be before static & catch-all)
+app.get('/google1df1443a4077599a.html', (req, res) => {
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
+    res.status(200).send('google-site-verification: google1df1443a4077599a.html');
+});
+app.get('/google*.html', (req, res) => {
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
+    res.status(200).send('google-site-verification: google1df1443a4077599a.html');
+});
+
 // Serve static frontend files
 app.use(express.static(__dirname));
 
